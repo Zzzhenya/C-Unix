@@ -12,6 +12,7 @@ int main(void)
 	return (0);
 }
 
+/* print the alphabet - lower case */
 void	print_alphabet(void)
 {
 	int i;
@@ -25,6 +26,7 @@ void	print_alphabet(void)
 	write (1, "\n", 1);
 }
 
+/* print the alphabet in reverse - lower case */
 void	print_reverse(void)
 {
 	int i;
@@ -38,6 +40,7 @@ void	print_reverse(void)
 	write (1, "\n", 1);
 }
 
+/* print the alphabet with alternative case */
 void	alternate(void)
 {
 	int i;

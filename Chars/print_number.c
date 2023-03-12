@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 	{
 		print_digits();
 		print_number(atoi(argv[1]));
-		write (1, "\n", 1);
+		putcharacter('\n');
 	}
 	return (0);
 }
@@ -25,10 +25,10 @@ void	print_digits(void)
 	i = '0';
 	while (i <= '9')
 	{
-		write (1, &i, 1);
+		putcharacter(i);
 		i ++;
 	}
-	write (1, "\n", 1);
+	putcharacter('\n');
 }
 
 /* Write any number in int range */

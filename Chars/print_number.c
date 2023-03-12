@@ -1,14 +1,18 @@
 #include <unistd.h>
+#include <stdlib.h>
 
 void	print_number(int nb);
 void	print_digits(void);
 void	putcharacter(char c);
 
-int main(void)
+int main(int argc, char **argv)
 {
-	print_digits();
-	print_number(-42);
-	write (1, "\n", 1);
+	if (argc == 2)
+	{
+		print_digits();
+		print_number(atoi(argv[1]));
+		write (1, "\n", 1);
+	}
 	return (0);
 }
 
